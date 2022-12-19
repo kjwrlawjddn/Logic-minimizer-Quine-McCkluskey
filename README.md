@@ -1,3 +1,11 @@
+#다운로드 및 사용법
+우측의 release를 클릭하시면 파일과 사용법을 확인할 수 있습니다.
+
+#How to download and use
+If you click release on the right, you can check the file and how to use it.
+
+
+
 디지털 공학을 배운 사람이라면 논리회로설계에서 논리최소화가 중요하다는 것을 알고 있을 것입니다. 하지만 변수의 개수가 4개를 초과하게 된다면, 사람이 손으로 논리최소화를 하기에는 어려움이 있을 것입니다. 10변수까지 논리최소화를 할 수 있는 logic minimizer라는 프로그램이 있기는 하지만, minterm과 don't care항이 많아지는 순간 프로그램은 멈추게 되는 불안정한 프로그램입니다.
 
 한편 논리최소화를 할 수 있는 방법 중에는 카르노맵 뿐 아니라 Quine McCluskey 알고리즘이나 ESPRESSO 알고리즘이 있습니다. Quine McCluskey 알고리즘은 4변수 이상에서 사용하는 매우 정확한 방법으로 변수의 개수가 적당히 많을 때 사용하기 좋은 방법입니다. 하지만 변수의 개수가 증가함에 따라 계산과정은 기하급수적으로 많아지게 됩니다. 따라서 요즘은 근사해를 찾는 ESPRESSO 알고리즘을 사용합니다. git hub에 Quine McCluskey 알고리즘을 C++로 구현해본 사람은 많았지만, 제대로 논리최소화가 되게끔 설계한 사람은 없었습니다. 따라서 저는 Quine McCluskey 알고리즘을 C++로 구현하여 계산량을 최소화해보았습니다.
