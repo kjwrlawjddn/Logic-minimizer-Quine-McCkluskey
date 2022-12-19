@@ -7,6 +7,8 @@
 이 프로그램은 10변수 이상에서도 컴퓨터의 메모리가 허용하는 한 제한없이 논리최소화를 할 수 있습니다. 대학교 수준의 논리최소화에서 유용하게 사용할 수 있을 것입니다.
 궁금하신 점이 있다면 아래의 메일로 연락 바랍니다. 
 
+
+
 Anyone who has studied digital logic circuits knows that logic minimization is important for logic circuit design.However, if there are more than four variables, it is difficult to minimize them by hand, and you have to use other algorithms. The Quine McCluskey algorithm is one of them, and I've implemented it in C++.
 
 The key to this project was to create an efficient program by minimizing computational time that increases exponentially as variables increase. Therefore, most operations were replaced by bit operations.
