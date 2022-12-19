@@ -5,7 +5,7 @@
 이 프로그램의 관건은 Implicant들을 빠르게 찾아내는 것입니다. 예를 들어 사람은 0001과 1001은 가장 앞 비트만 다르다는 것을 단번에 알 수 있지만, 컴퓨터는 그렇지 않습니다. 예시의 결과를 도출하기 위해서는, 적어도 4번의 비트별 연산이 필요합니다. 이대로 프로그램을 작성한다면 4번의 연산을 위해 수반되는 추가적인 메모리 또한 증가할 것입니다. 연산 횟수를 줄이기 위해, 거의 모든 연산을 비트연산으로 바꾸어 1번의 연산만으로도 위 예시의 결과를 도출 할 수 있게 코드를 작성했습니다.
 
 이 프로그램은 10변수 이상에서도 컴퓨터의 메모리가 허용하는 한 제한없이 논리최소화를 할 수 있습니다. 대학교 수준의 논리최소화에서 유용하게 사용할 수 있을 것입니다.
-궁금하신 점이 있다면 아래의 메일로 연락 바랍니다. 광운대학교 김정우
+궁금하신 점이 있다면 아래의 메일로 연락 바랍니다. 
 
 Anyone who has studied digital logic circuits knows that logic minimization is important for logic circuit design.However, if there are more than four variables, it is difficult to minimize them by hand, and you have to use other algorithms. The Quine McCluskey algorithm is one of them, and I've implemented it in C++.
 
@@ -15,4 +15,5 @@ It will be quite helpful when designing a logic device at the university level.
 
 If you have any question, please send e-mail to kjw0103501@kw.ac.kr or kjwrlawjddn@naver.com or kjw0103501@gmail.com(not recommended)
 
+광운대학교 김정우
 Jungwoo Kim, Kwangwoon University
