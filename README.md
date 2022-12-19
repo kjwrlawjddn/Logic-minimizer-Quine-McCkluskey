@@ -1,10 +1,10 @@
 #다운로드 및 사용법
 
-우측의 release를 클릭하시면 파일과 사용법을 확인할 수 있습니다.
+release를 클릭하시면 파일과 사용법을 확인할 수 있습니다.
 
 #How to download and use
 
-If you click release on the right, you can check the file and how to use it.
+If you click release, you can check the file and how to use it.
 
 
 
