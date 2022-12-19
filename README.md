@@ -8,15 +8,9 @@ Quine McCluskey 알고리즘의 핵심은 Implicant들을 찾아내는 것입니
 
 궁금하신 점이 있다면 아래의 메일로 연락 바랍니다. 광운대학교, 김정우
 
-Anyone who has studied digital logic circuits knows that logic minimization is important for logic circuit design.
+Anyone who has studied digital logic circuits knows that logic minimization is important for logic circuit design.However, if there are more than four variables, it is difficult to minimize them by hand, and you have to use other algorithms. The Quine McCluskey algorithm is one of them, and I've implemented it in C++.
 
-However, if there are more than four variables, it is difficult to minimize them by hand, and you have to use other algorithms.
-
-The Quine McCluskey algorithm is one of them, and I've implemented it in C++.
-
-The key to this project was to create an efficient program by minimizing computational time that increases exponentially as variables increase.
-
-Therefore, most operations were replaced by bit operations.
+The key to this project was to create an efficient program by minimizing computational time that increases exponentially as variables increase. Therefore, most operations were replaced by bit operations.
 
 It will be quite helpful when designing a logic device at the university level.
 
