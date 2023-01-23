@@ -6,8 +6,7 @@
 (https://github.com/HigherIdeal/Logic-minimizer-Quine-McCkluskey/releases)
 #How to download and use
 
-If you click release, you can check the file and how to use it.
-https://github.com/HigherIdeal/Logic-minimizer-Quine-McCkluskey/releases
+[If you click release, you can check the file and how to use it.](https://github.com/HigherIdeal/Logic-minimizer-Quine-McCkluskey/releases)
 //////////////////////////////////////////////////////////////////
 
 디지털 공학을 배웠다면, 논리회로설계에서 논리최소화 단계가 중요하다는 것을 알고 있을 것입니다. 4변수 이하의 논리최소화는 Karnaugh map을 이용해 손으로도 가능하지만, 5변수 이상의 논리최소화는 컴퓨터의 도움을 받아야 합니다. 
