@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////\
-다운로드 및 사용법 || How to download and use
+다운로드 및 사용법 || How to download and use\
 [여기를 클릭하시면 프로그램 파일과 사용법을 확인할 수 있습니다.](https://github.com/HigherIdeal/Logic-minimizer-Quine-McCkluskey/releases)\
 [If you click this, you can check the file and how to use it.](https://github.com/HigherIdeal/Logic-minimizer-Quine-McCkluskey/releases)\
 //////////////////////////////////////////////////////////////////
