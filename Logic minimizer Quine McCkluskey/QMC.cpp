@@ -14,7 +14,7 @@ QMC::QMC()
 	cout << "=============================================================================" << endl;
 	cout << "=====================made by Jungwoo_Kim KwangWoon univ.=====================" << endl;
 	cout << "=============================================================================" << endl;
-	cout << "º¯¼öÀÇ °³¼ö¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä: ";
+	cout << "How many variables are used?: ";
 	cin >> n;
 
 	maximum_array = new unsigned long long[n];
@@ -46,7 +46,7 @@ QMC::QMC()
 		PI_arr[i] = new int[4] {};
 	}
 
-	cout << "¿¢¼¿¿¡ ÀÛ¼ºÇÑ Áø¸®Ç¥ÀÇ ÇÔ¼ö¸¦ µå·¡±× ÇØ¼­ ºÙ¿©³Ö¾î ÁÖ¼¼¿ä" << endl;
+	cout << "drag & drop truth table's function values here" << endl;
 	ini_arr = new char[(int)(pow(2, n))];
 	for (int i = 0; i < (int)(pow(2, n)); i++)
 	{
@@ -179,12 +179,12 @@ int QMC::calculate_array()
 					//As enter present loop, this element is not the prime implicant.
 					RPI_arr[PS][i][2] = 1;
 					RPI_arr[PS][j][2] = 1;
-					//ÀÏ´Ü ´ëÀÔÇÑ´Ù. ÀÌÈÄ µ¿ÀÏÇÑ Ç×ÀÌ ÀÖ´Ù¸é RPI_arr_row_n¸¦ Áõ°¡½ÃÅ°Áö ¾Ê´Â´Ù. ÀÏ´Ü ´ëÀÔ¸ÕÀú ÇØº¸°í °áÁ¤ÇÏ±â ¶§¹®¿¡ RPI_arr_row_n°ªÀÌ ÃÊ°úµÉ ¼öµµ ÀÖ´Ù.
-					//ÀÌ°ÍÀº PI´Â ¾Æ´Ï¹Ç·Î PI_arr_check¸¦ Áõ°¡½ÃÅ²´Ù.
+					//ì¼ë‹¨ ëŒ€ìž…í•œë‹¤. ì´í›„ ë™ì¼í•œ í•­ì´ ìžˆë‹¤ë©´ RPI_arr_row_në¥¼ ì¦ê°€ì‹œí‚¤ì§€ ì•ŠëŠ”ë‹¤. ì¼ë‹¨ ëŒ€ìž…ë¨¼ì € í•´ë³´ê³  ê²°ì •í•˜ê¸° ë•Œë¬¸ì— RPI_arr_row_nê°’ì´ ì´ˆê³¼ë  ìˆ˜ë„ ìžˆë‹¤.
+					//ì´ê²ƒì€ PIëŠ” ì•„ë‹ˆë¯€ë¡œ PI_arr_checkë¥¼ ì¦ê°€ì‹œí‚¨ë‹¤.
 					PI_arr_check++;
 					PI_arr_check_mid++;
-					//check_same_value()¸¦ ÀÌ¿ëÇØ ¿©ÅÂ±îÁöÀÇ u¿¡¼­ °°Àº °ªÀÌ ÀÖ¾ú´ÂÁö È®ÀÎÇÑ´Ù. °°Àº °ªÀÌ ¾ø´Ù¸é RPI_arr_row_n¸¦ Áõ°¡ÇÑ´Ù.
-					//ÀÌ¶§ RPI_arr[RPI_arr_row_n][i][0]°ªÀÌ 0ÀÎ °æ¿ì¿¡´Â ¿ø·¡µµ 0ÀÌ ÀúÀåµÇ¾î ÀÖ±â ¶§¹®¿¡ ¿¹¿Ü·Î »©¾îÁØ´Ù. 
+					//check_same_value()ë¥¼ ì´ìš©í•´ ì—¬íƒœê¹Œì§€ì˜ uì—ì„œ ê°™ì€ ê°’ì´ ìžˆì—ˆëŠ”ì§€ í™•ì¸í•œë‹¤. ê°™ì€ ê°’ì´ ì—†ë‹¤ë©´ RPI_arr_row_në¥¼ ì¦ê°€í•œë‹¤.
+					//ì´ë•Œ RPI_arr[RPI_arr_row_n][i][0]ê°’ì´ 0ì¸ ê²½ìš°ì—ëŠ” ì›ëž˜ë„ 0ì´ ì €ìž¥ë˜ì–´ ìžˆê¸° ë•Œë¬¸ì— ì˜ˆì™¸ë¡œ ë¹¼ì–´ì¤€ë‹¤. 
 					if ((RPI_arr[NS][RPI_arr_row_n][0] | RPI_arr[NS][RPI_arr_row_n][1]) != 0)
 					{
 						if (check_same_value())
@@ -199,7 +199,7 @@ int QMC::calculate_array()
 
 				}
 			}
-			//i°¡ ¸ðµç j¿Í ºñ±³¸¦ ³¡³ÂÀ» ¶§, RPI_arr[PS][i][2]°¡ 0ÀÌ¸é PIÀÌ¹Ç·Î PI¿¡ ´ëÀÔÇÑ´Ù.
+			//iê°€ ëª¨ë“  jì™€ ë¹„êµë¥¼ ëëƒˆì„ ë•Œ, RPI_arr[PS][i][2]ê°€ 0ì´ë©´ PIì´ë¯€ë¡œ PIì— ëŒ€ìž…í•œë‹¤.
 			if ((RPI_arr[PS][i][2] | PI_arr_check_mid) == 0)
 			{
 				PI_arr[PI_arr_row][0] = RPI_arr[PS][i][0];
