@@ -26,7 +26,7 @@ There were several people on the git hub who tried to make the Quine McCluskey a
 The fatal disadvantage of the Quine McCluskey algorithm is that the amount of computation increases exponentially as the number of variables increases. For example, when comparing two binary numbers 10011 and 10010 among 5 variable minterms, a person can know at once that only the LSB is different, whereas a computer performs bitwise operation for each digit and finds out that the LSB is different after a total of 5 operations . If you compare two binary numbers 1000101000 and 1000101001 of two 10-variable minterms, you will understand that the amount of operation increases exponentially. To overcome this shortcoming, minterms were replaced with decimal bit operations in most calculations to speed up as much as possible.
 
 Even with 14 or more variables, this program can perform logic minimization without limiting the number of variables as long as the computer memory allows. It will be useful for logic minimization at the undergraduate level.
-If you have any question, please send e-mail to kjw0103501@kw.ac.kr or kjwrlawjddn@naver.com or kjw0103501@gmail.com(not recommended)
+If you have any question, please send e-mail to kjw0103501@kw.ac.kr or kjwrlawjddn@naver.com or kjwhigherideal@gmail.com(not recommended)
 
 광운대학교 김정우
 Jungwoo Kim, Kwangwoon University
